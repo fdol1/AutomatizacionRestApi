@@ -1,0 +1,10 @@
+package com.lfpu.auto.utils;
+
+public class Headers {
+
+    public static String AUTHORIZATION = "Authorization";
+    public static String AUTHORIZATION_CAUSES_VALUE = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImlzcyI6ImJhY2tvZmZpY2VsZCJ9.eyJhcHAiOiJiYWNrb2ZmaWNlIiwiY29tcGFueSI6ImxpbmVhZGlyZWN0YSIsImlhdCI6MTY1OTU2MzM3NCwiZXhwIjoxNjU5NTYzNDM0fQ.0fR-kHA06DV5pNUbn9Qo3rXIvl0is5rfMPVqYIkVtcQ";
+    public static String AUTHORIZATION_MANAGER_VALUE = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImlzcyI6ImJhY2tvZmZpY2VsZCJ9.eyJhcHAiOiJiYWNrb2ZmaWNlIiwiY29tcGFueSI6ImxpbmVhZGlyZWN0YSIsImlhdCI6MTY1OTU2MzMxOCwiZXhwIjoxNjU5NTYzMzc4fQ.gtDrb_qOTkfKXEiHzTWDrTzHp8nrXl4pYi-l2DioQws";
+
+
+}
