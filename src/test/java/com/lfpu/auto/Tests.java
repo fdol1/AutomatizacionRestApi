@@ -36,8 +36,8 @@ public class Tests {
     public void prueba2() {
 
         DataGetCausesModel d = DataGetCausesModel.builder()
-                .capacidad("00")
-                .edad("99").build();
+                .capacidad("")
+                .edad("").build();
 
 
 
@@ -51,7 +51,7 @@ public class Tests {
 
      */
 
-        System.out.println(d.toString());
+       // System.out.println(dataGetCausesModel1.toString());
        // System.out.println(dataGetCausesModel2);
       //  System.out.println(dataGetCausesModel3);
     }
