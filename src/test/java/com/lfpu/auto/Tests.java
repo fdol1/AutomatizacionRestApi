@@ -1,6 +1,6 @@
 package com.lfpu.auto;
 
-import com.lfpu.auto.data.DataGetCausesModel;
+import com.lfpu.auto.model.DataGetCausesModel;
 import com.lfpu.auto.questions.ResponseCode;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;

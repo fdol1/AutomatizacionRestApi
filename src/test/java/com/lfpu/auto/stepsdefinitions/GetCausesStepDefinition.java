@@ -1,7 +1,7 @@
 package com.lfpu.auto.stepsdefinitions;
 
 import com.lfpu.auto.questions.ResponseCode;
-import com.lfpu.auto.tasks.GetCauses;
+import com.lfpu.auto.tasks.RegisterUser;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,7 +17,6 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-
 public class GetCausesStepDefinition {
 
     private EnvironmentVariables environmentVariables;
@@ -29,17 +28,20 @@ public class GetCausesStepDefinition {
 
     @Given("^Que juan realiza realiza un llamado al api$")
     public void queJuanRealizaUnLlamadoAlApi() {
-        String endpoint = "";
-        endpoint = EnvironmentSpecificConfiguration.from(environmentVariables).getProperty("endpoint.causesStopper");
-
-        //System.out.println(endpoint);
+        String endpoint;
+        endpoint = EnvironmentSpecificConfiguration.from(environmentVariables).getProperty("endpoint.pruebas");
         theActorCalled("juan").whoCan(CallAnApi.at(endpoint)).remember("variables", environmentVariables);
     }
 
     @When("^Que realiza peticion get al micro servicio: (.*)$")
     public void queRealizaPeticionGetAlMicroServicioBackcausestopperGetCauses(String capacidad) {
-        theActorInTheSpotlight().attemptsTo(GetCauses.capabilite(capacidad));
+        //theActorInTheSpotlight().attemptsTo(GetCauses.capabilite(capacidad));
 
+        theActorInTheSpotlight().attemptsTo(
+                RegisterUser
+                        .conEmail("hola")
+                        .andPassword("hola2")
+        );
     }
 
     @Then("^Verifica el estado de la peticion (.*)$")

@@ -1,4 +1,4 @@
-package com.lfpu.auto.data;
+package com.lfpu.auto.model;
 
 import lombok.Builder;
 import lombok.Data;
