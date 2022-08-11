@@ -1,20 +1,13 @@
 package com.lfpu.auto.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 
-@ToString
 @Data
 @AllArgsConstructor
 public class Foo {
 
-    private String nombre;
-    private String apellido;
-    private String peso;
-    private String edad;
-
-    public Foo() {
-        
-    }
+    private String name;
+    private String lastName;
+    private String email;
+    private int age;
 }
